@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" dir="auto">
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -11,22 +11,23 @@
 </head>
 <body>
 
-	<!--- Navbar --->
+	<!--- Button Account --->
 
+	<!--- Navbar --->
 	<nav class="sidebar close">
 		<header>
-			<div class="image-text">
+			<aside class="image-text">
 				<span class="image">
 					<img src="img/logo_tesla.png" alt="logo tesla">
 				</span>
 
-				<div class="text header-text">
+				<aside class="text header-text">
 					<span class="name">Tesla</span>
 					<span class="profession">Simone</span>
-				</div>
+				</aside>
 
 				<i class='bx bx-chevron-right toggle'></i>
-			</div>
+			</aside>
 		</header>
 
 		<section class="menu-bar">
@@ -64,10 +65,24 @@
 						</a>
 					</li>
 
+					<li class="nav-link">
+						<a href="#">
+							<i class='bx bx-map icon'></i>
+							<span class="text nav-text">Position</span>
+						</a>
+					</li>
+
+					<li class="nav-link">
+						<a href="#">
+							<i class='bx bx-battery icon' ></i>
+							<span class="text nav-text">Batterie</span>
+						</a>
+					</li>
+
 				</ul>
 			</menu>
 
-			<div class="bottom-content">
+			<menu class="bottom-content">
 				<li class="">
 					<a href="#">
 						<i class='bx bx-log-out icon'></i>
@@ -76,49 +91,54 @@
 				</li>
 
 				<li class="mode">
-					<div class="moon-sun">
+					<aside class="moon-sun">
 						<i class='bx bx-moon icon moon'></i>
 						<i class='bx bx-sun icon sun'></i>
-					</div>
+					</aside>
 					<span class="mode-text text">Mode sombre</span>
 
-					<div class="toggle-switch">
+					<aside class="toggle-switch">
 						<span class="switch"></span>
-					</div>
+					</aside>
 				</li>
-			</div>
+			</menu>
 
 		</section>
 	</nav>
 
+
 	<!--- Front page test --->
 
-	<div class="banner-area">
-		<div class="content-area">
+	<section class="banner-area">
+
+		<aside class="wrapper">
+			<button class="btn-acc">
+				<aside class="icon2">
+					<i class='bx bxs-user'></i>
+				</aside>
+				<span>Connexion</span>
+			</button>
+		</aside>
+
+		<aside class="content-area">
 			<div class="content">
-
 				<h1>Simone</h1>
-				<p>Un silence pure et éléctrique</p>
-				<button class="btn">Clique</button>
-
+				<p>Silence pure et éléctrique</p>
 			</div>
-		</div>
-	</div>
+		</aside>
+
+	</section>
 
 
-	<header>
-		<h1>Simone</h1>
-		<button type="button"><i class="fa-solid fa-user"></i>Connecter</button>	
-	</header>
-
-	<section>
+	<!---
+	<section class="batt">
 		<label for="file"><i class="fa-solid fa-battery-half"></i>Etat Chargement : </label>
 		<progress id="file" value="71" max="100"> 71% </progress>
 		<label><em>Stationné</em></label> 
 	</section>
+	--->
 
-	<img src="https://www.pngmart.com/files/21/White-Tesla-Car-PNG-Clipart.png" alt="tesla car">
-
+	<!---
 	<nav>
 		<ul>
 			<li><i class="fa-solid fa-car"></i>Contrôles</li>
@@ -128,6 +148,7 @@
 			<li><i class="fa-solid fa-shield"></i>Sécurité et conducteurs<br><em>IMoi - Connectée</em></li>
 		</ul>
 	</nav>
+	--->
 
 	<script src="js/script.js"></script>
 
