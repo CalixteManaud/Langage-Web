@@ -38,7 +38,6 @@ body.dark {
 
 /* === Front page === */
 .banner-area {
-	width: 200px;
 	height: 100vh;
 	background: url("../img/front_tesla.jpg");
 	background-size: cover;
