@@ -1,18 +1,134 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="css/test.css">
+    <meta name="viewport" content="width=device-width, target-densitydpi=dpi, initial-scale=1" />
+    <!--<link rel="stylesheet" type="text/css" href="css/-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/b368ec75de.js" crossorigin="anonymous"></script>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>Tesla App</title>
 </head>
 <body>
-  <main>
-    <section>
-      <progress></progress>
-      <
-    </section>
-  </main>
+      <!-- Header : Titre et connexion -->
+
+      <header class="First">
+          <h1 class="title">Simone</h1>
+          <a class="prof" href="#"><i class='bx bxs-user-circle bx-md bx-burst-hover'></i></a>
+      </header>
+
+      <!-- Section : Batterie et les informations -->
+        <section class="container">
+          <div class="progress" style="height: 25px;">
+              <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuemin="0" aria-valuemax="100">
+                  25%
+              </div>
+          </div>
+        </section>
+          <!--<h2 class="percent">71%</h2>-->
+
+      <img class="img-fluid rounded mx-auto d-block" src="img/unknown.png" alt="voiture">
+
+      <ul class="nav justify-content-center">
+
+          <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">
+                  <i class='bx bxs-circle bx-flashing-hover bx-md' ></i>
+              </a>
+          </li>
+
+          <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">
+                  <i class='bx bx-leaf bx-flashing-hover bx-md'></i>
+              </a>
+          </li>
+
+          <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">
+                  <i class='bx bxs-zap bx-flashing-hover bx-md'></i>
+              </a>
+          </li>
+
+          <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">
+                  <i class='bx bxs-car-crash bx-flashing-hover bx-md' ></i>
+              </a>
+          </li>
+      </ul>
+
+      <section class="accordion accordion-flush" id="accordionFlushExample">
+
+          <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingOne">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                      <i class='bx bxs-car-mechanic'> Contrôles</i>
+                  </button>
+              </h2>
+              <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">Rien</div>
+              </div>
+          </div>
+
+          <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingTwo">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                      <i class='bx bx-wind'> Ventilation</i>
+                  </button>
+              </h2>
+              <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">Intérieur à 23°C</div>
+              </div>
+          </div>
+
+          <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingThree">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                      <i class="bx bx-map"> Position</i>
+                  </button>
+              </h2>
+              <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">13 Rue Paul Guigou</div>
+              </div>
+          </div>
+
+          <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingFour">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                      <i class='bx bxs-bookmarks'> Planifier</i>
+                  </button>
+              </h2>
+              <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">Rien pour l'instant</div>
+              </div>
+          </div>
+      </section>
+
+
+    <footer class="py-3 my-4">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+            <li class="nav-item">
+                <a href="#" class="nav-link px-2 text-muted">Accueil</a>
+            </li>
+
+            <li class="nav-item">
+                <a href="#" class="nav-link px-2 text-muted">Contrôle</a>
+            </li>
+
+            <li class="nav-item">
+                <a href="#" class="nav-link px-2 text-muted">Ventilation</a>
+            </li>
+
+            <li class="nav-item">
+                <a href="#" class="nav-link px-2 text-muted">Position</a>
+            </li>
+
+            <li class="nav-item">
+                <a href="#" class="nav-link px-2 text-muted">Planifier</a>
+            </li>
+
+        </ul>
+        <p class="text-center text-muted">@ 2022-2023 Manaud</p>
+    </footer>
 </body>
 </html>
