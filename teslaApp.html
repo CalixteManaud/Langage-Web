@@ -37,19 +37,19 @@
               <div class="collapse navbar-collapse" id="ftco-nav">
                   <ul class="navbar-nav ml-auto mr-md-3">
                       <li class="nav-item active"><a href="#" class="nav-link">Home</a></li>
-                      <li class="nav-item"><a href="#" class="nav-link">Contrôles</a></li>
+                      <li class="nav-item"><a href="Account_Page.html" class="nav-link">Contrôles</a></li>
                       <li class="nav-item"><a href="#" class="nav-link">Ventilation</a></li>
-                      <li class="nav-item"><a href="#" class="nav-link">Position</a></li>
+                      <li class="nav-item"><a href="#modalCustom" class="nav-link">Position</a></li>
                   </ul>
               </div>
               </div>
           </nav>
-      </header>
+      </header><br>
 
       <!-- Section : Batterie et les informations -->
-      <section class="container">
+      <section class="container-sm">
           <div class="progress" style="height: 25px;">
-              <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuemin="0" aria-valuemax="100">
+              <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
                   25%
               </div>
           </div>
@@ -65,25 +65,25 @@
 
               <li class="nav-item">
                   <a class="nav-link active" aria-current="page" href="#">
-                      <i class='bx bxs-circle bx-flashing-hover bx-md' ></i>
+                      <i class='bx bxs-circle bx-md' ></i>
                   </a>
               </li>
 
               <li class="nav-item">
                   <a class="nav-link active" aria-current="page" href="#">
-                      <i class='bx bx-leaf bx-flashing-hover bx-md'></i>
+                      <i class='bx bx-leaf bx-md'></i>
                   </a>
               </li>
 
               <li class="nav-item">
                   <a class="nav-link active" aria-current="page" href="#">
-                      <i class='bx bxs-zap bx-flashing-hover bx-md'></i>
+                      <i class='bx bxs-zap bx-md'></i>
                   </a>
               </li>
 
               <li class="nav-item">
                   <a class="nav-link active" aria-current="page" href="#">
-                      <i class='bx bxs-car-crash bx-flashing-hover bx-md' ></i>
+                      <i class='bx bxs-car-crash bx-md' ></i>
                   </a>
               </li>
           </ul>
@@ -120,7 +120,10 @@
                   </button>
               </h2>
               <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-                  <div class="accordion-body">13 Rue Paul Guigou</div>
+                  <div class="accordion-body">
+                      <!--13 Rue Paul Guigou-->
+                      <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#modalCustom">Ici votre voiture</button>
+                  </div>
               </div>
           </div>
 
@@ -136,9 +139,25 @@
           </div>
       </section>
 
+      <div class="modal fade" id="modalCustom" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg" role="document">
+              <div class="modal-content">
+                  <div class="modal-body mb-0 p-0">
+                      <div id="map-container-google-18" class="z-depth-1-half map-container-11" style="height: 400px">
+                          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1435.4279437508594!2d5.4514231176908865!3d43.513457685369964!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12c98d8e9e0b3e41%3A0x7640a64b13faa8f5!2sIUT%20d&#39;Aix-Marseille%20site%20d&#39;Aix-en-Provence!5e0!3m2!1sfr!2sfr!4v1667157654295!5m2!1sfr!2sfr" frameborder="0" style="border: 0" allowfullscreen></iframe>
+                      </div>
+                  </div>
 
-    <footer class="py-3 my-4">
-        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                  <div class="modal-footer justify-content-center">
+                      <button type="button" class="btn btn-secondary btn-md">Save Location</button>
+                      <button type="button" class="btn btn-outline-secondary btn-md" data-dismiss="modal">Close <i class="fas fa-times ml-1"></i></button>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+    <!--<footer class="py-3 my-4 navbar fixed-bottom">
+        <ul class="nav justify-content-center pb-3 mb-3">
             <li class="nav-item">
                 <a href="#" class="nav-link px-2 text-muted">Accueil</a>
             </li>
@@ -161,7 +180,7 @@
 
         </ul>
         <p class="text-center text-muted">@ 2022-2023 Manaud</p>
-    </footer>
+    </footer>-->
 
     <script src="js/jquery.min.js"></script>
     <script src="js/popper.js"></script>

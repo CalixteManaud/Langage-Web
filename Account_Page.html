@@ -3,15 +3,89 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" href="css/account.css">
-  <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
   <script src="https://kit.fontawesome.com/b368ec75de.js" crossorigin="anonymous"></script>
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
   <title>Account</title>
 </head>
 <body>
-  <video id="videoBG" poster="img/poster.png" autoplay muted loop>
-    <source src="videos/video_account.mp4" type="video/mp4">
-  </video>
+
+<!-- Header : Titre et connexion -->
+<header class="container">
+  <nav class="navbar navbar-expand-lg ftco_navbar ftco-navbar-light" id="ftco-navbar">
+    <div class="container">
+      <a class="navbar-brand" href="teslaApp.html">Simone</a>
+      <div class="social-media order-lg-last">
+        <p class="mb-0 d-flex">
+          <a href="#" class="d-flex align-items-center justify-content-center">
+            <i class="fa-solid fa-user"></i>
+          </a>
+          <a href="#" class="d-flex align-items-center justify-content-center">
+            <span class="fa fa-instagram"><i class="sr-only">Instagram</i></span>
+          </a>
+          <a href="#" class="d-flex align-items-center justify-content-center">
+            <span class="fa fa-twitter"><i class="sr-only">Twitter</i> </span>
+          </a>
+        </p>
+      </div>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav2" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="fa fa-bars"></span> Menu
+      </button>
+
+      <div class="collapse navbar-collapse" id="ftco-nav2">
+        <ul class="navbar-nav ml-auto mr-md-3">
+          <li class="nav-item active"><a href="teslaApp.html" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Contrôles</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Ventilation</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Position</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header><br>
+
+  <section class="container">
+    <div class="row my-3">
+      <h4>Consommation Watt/Heure</h4>
+    </div>
+
+    <div class="row my-2">
+      <div class="col-md-6 py-1">
+        <div class="card">
+          <div class="card-body">
+            <canvas id="chLine"></canvas>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 py-1">
+        <div class="card">
+          <div class="card-body">
+            <canvas id="chBar"></canvas>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--<div class="footer-basic">
+    <footer class="footer fixed-bottom">
+      <div class="social"><a href="#"><i class="icon ion-social-instagram"></i></a><a href="#"><i class="icon ion-social-github"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a></div>
+      <ul class="list-inline">
+        <li class="list-inline-item"><a href="#">Accueil</a></li>
+        <li class="list-inline-item"><a href="#">Contrôles</a></li>
+        <li class="list-inline-item"><a href="#">Ventilation</a></li>
+        <li class="list-inline-item"><a href="#">Position</a></li>
+      </ul>
+      <p class="copyright">Manaud @ 2022 - 2023</p>
+    </footer>
+  </div>-->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@3.9.1/dist/chart.min.js"></script>
+  <script type="text/javascript" src="js/chart1.js"></script>
 </body>
 </html>
